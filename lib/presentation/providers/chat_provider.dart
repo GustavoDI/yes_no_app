@@ -32,6 +32,8 @@ class ChatProvider extends ChangeNotifier{
   // llamada api
   Future<void> herReply()async{
     final herMessage = await getYesNoAnswer.getAnswer();
+    messageList.add(herMessage);
+    moveScrollToBottom();
   }
 
   // hacer el scroll

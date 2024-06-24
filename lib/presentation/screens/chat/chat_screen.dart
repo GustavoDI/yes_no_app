@@ -85,7 +85,7 @@ class _ChatView extends StatelessWidget {
 
                       // regreso de la instacia message que es la entidad
                       return (message.fromWho == FromWho.hers)
-                      ? const HerMessageBubble()
+                      ? HerMessageBubble(message: message)
                       : MyMessageBuble(message:message);
                     })),
             //caja de texto
