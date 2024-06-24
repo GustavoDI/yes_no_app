@@ -66,6 +66,9 @@ class _ChatView extends StatelessWidget {
             // const Text('Mundo'),
             Expanded(
                 child: ListView.builder(
+                  // controlar scroll cuando chat comienza  a bajar
+                  controller: chatProvider.chatAScrollController,
+
                   // anterior solo itera una cantidad exacta de mensajes
                     // itemCount: 50,
                     // llamada al chatProvider
